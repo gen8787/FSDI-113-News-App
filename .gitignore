@@ -39,3 +39,7 @@ Thumbs.db #thumbnail cache on Windows
 .DS_Store
 .AppleDouble
 .LSOverride
+
+
+### DB ###
+*.sqlite3

@@ -1,0 +1,24 @@
+/* G L O B A L */
+body {
+    background-image: linear-gradient(#E8E8E8, #E8E8E8);
+}
+
+.container {
+    min-height: 90vh;
+}
+
+
+/* S P E C I F I C */
+.nav-log {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.g-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* F O O T E R */
+footer {
+    min-height: 10vh;
+}
