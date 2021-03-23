@@ -2,7 +2,7 @@
 
 ## News App
 
-### [Project Link (does not open in new tab)]()
+### [Project Link (does not open in new tab)](https://intense-cove-40322.herokuapp.com)
 
 #### Acceptance criteria:
 
