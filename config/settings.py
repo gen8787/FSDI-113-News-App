@@ -25,7 +25,7 @@ SECRET_KEY = '0=6=ail+=m(3_44wa=+pzdgcx(0j-9tmczv0gsc9_3p_c$1^ec'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -123,4 +124,4 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'accounts.CustomUser'  # <---- A D D
 
 LOGIN_REDIRECT_URL = 'home'  # <--- A D D
-LOGOUT_REDIRECT_URL = 'home'  # <--- A D D
+LOGOUT_REDIRECT_URL = 'login'  # <--- A D D

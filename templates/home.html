@@ -8,7 +8,26 @@
     <h1 class="display-2 mt-5 text-center g-font">News App</h1>
     <div class="divider bg-primary border border-secondary"></div>
 
-    <h3>You are {{user.age}} years old.</h3>
+    <!-- L O G G E D   I N -->
+    {% if user.is_authenticated %}
+    <div>
+        <small class="text-muted">Welcome, {{user.username}}. You are {{user.age}} years old. Last login: {{user.last_login}}</small>
+    </div>
+    
+    <div class="all-pages border border-dark rounded">
+
+    </div>
+
+    <!-- N O T   L O G G E D   I N -->
+    {% else %}
+    <div class="mt-3 p-3 border border-dark rounded login-error-btns w-75 mx-auto">
+        <div class="alert alert-danger border border-danger rounded" role="alert">Error: You must be logged in to view this page.</div>
+        <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-lg btn-primary mx-5"><a class="text-decoration-none text-white" href="{% url 'login' %}">Login</a></button>
+            <button class="btn btn-lg btn-warning mx-5"><a class="text-decoration-none text-dark" href="{% url 'signup' %}">Register</a></button>
+        </div>
+    </div>
+    {% endif %}
 
 </div>
 

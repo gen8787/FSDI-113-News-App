@@ -1,6 +1,6 @@
 /* G L O B A L */
 body {
-    background-image: linear-gradient(#E8E8E8, #E8E8E8);
+    background-image: linear-gradient(#E8E8E8, #d4d1d1);
 }
 
 .container {
@@ -16,6 +16,10 @@ body {
 
 .g-font {
     font-family: 'Oswald', sans-serif;
+}
+
+.login-error-btns button {
+    width: 200px;
 }
 
 /* F O O T E R */
