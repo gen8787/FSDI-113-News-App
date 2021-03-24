@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',  # <--- 3 R D   P A R T Y
     'accounts',  # <--- A P P
     'pages',  # <--- A P P
 ]
@@ -125,3 +126,5 @@ AUTH_USER_MODEL = 'accounts.CustomUser'  # <---- A D D
 
 LOGIN_REDIRECT_URL = 'home'  # <--- A D D
 LOGOUT_REDIRECT_URL = 'login'  # <--- A D D
+CRISPY_TEMPLATE_PACK = 'bootstrap4'  # <--- A D D
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

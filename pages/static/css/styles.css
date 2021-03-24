@@ -18,7 +18,8 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-.login-error-btns button {
+.login-error-btns button,
+.btn-wide {
     width: 200px;
 }
 
