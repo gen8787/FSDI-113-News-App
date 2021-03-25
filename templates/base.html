@@ -24,24 +24,45 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'password_change' %}">Change Password</a>
+                        <a class="nav-link" href="#">Some Link</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'password_reset' %}">Reset Password</a>
+                        <a class="nav-link" href="#">Some Link</a>
                     </li>
                 </ul>
+                
                 {% if user.is_authenticated %}
-                    <span class="navbar-text text-primary nav-log">
-                        Welcome, {{user.username}} | <a href="{% url 'logout' %}">Logout</a>
-                    </span>
+                <ul class="navbar-nav nav-log">
+                    <li class="navbar-text text-primary">
+                        Welcome, {{user.username}} | 
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu bg-dark" style="right: 0; left: auto;" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="{% url 'password_change' %}">Change Password</a></li>
+                            <li><hr class="dropdown-divider border-secondary"></li>
+                            <li><a class="dropdown-item text-warning" href="{% url 'logout' %}">Logout</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                    
                 {% else %}
-                    <span class="navbar-text text-warning nav-log">
-                        You are not logged in | <a class="text-warning" href="{% url 'login' %}">Login</a>&nbsp| <a class="text-warning" href="{% url 'signup' %}">Signup</a>
+                    <span class="navbar-text text-white nav-log">
+                        You are not logged in | <a class="text-primary" href="{% url 'login' %}">Login</a>
+                        &nbsp| <a class="text-warning" href="{% url 'signup' %}">Register</a>
+                        &nbsp| <a class="text-danger" href="{% url 'password_reset' %}">Reset Password</a>
                     </span>
                 {% endif %}
             </div>
