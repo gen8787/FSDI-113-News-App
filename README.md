@@ -6,10 +6,18 @@
 
 #### Acceptance criteria:
 
-- [x] Write, build and deploy your new "user" accounts enabled application such that additional users are able to log in and log out using an authentication mechanism.
+- [x] 1. Must be able to sign up.
 
-- [x] Your code must be in github but additionally you must include a link to your app deployed on Heroku in your README.md file (in your repo).
+- [x] 2. Must be able to reset my password (emails sent via sendgrid).
 
-- [x] Upload your user authentication app with bootstrap templates.
+- [x] 3. Must be able to change my password.
 
-- [x] Upload your password change app to both GitHub and Heroku.
+- [x] 4. Must support multiple users plus admin.
+
+- [x] 5. Must display news articles in a list view.
+
+- [x] 6. Must be possible to create, view, update and delete articles.
+
+- [ ] 7. Non-registered users cannot create, update or delete articles (only view).
+
+- [x] 8. Submission must be github link but also include a heroku URL in the README.

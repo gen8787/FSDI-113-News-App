@@ -23,6 +23,16 @@ body {
     width: 200px;
 }
 
+#article-card {
+    height: 300px;
+    width: 300px;
+}
+
+.btn-wide {
+    width: 175px;
+    margin-right: 10px;
+}
+
 /* F O O T E R */
 footer {
     min-height: 10vh;

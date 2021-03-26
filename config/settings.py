@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'crispy_forms',  # <--- 3 R D   P A R T Y
     'accounts',  # <--- A P P
     'pages',  # <--- A P P
+    'articles',  # <--- A P P
 ]
 
 MIDDLEWARE = [
@@ -127,4 +128,12 @@ AUTH_USER_MODEL = 'accounts.CustomUser'  # <---- A D D
 LOGIN_REDIRECT_URL = 'home'  # <--- A D D
 LOGOUT_REDIRECT_URL = 'login'  # <--- A D D
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # <--- A D D
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# E M A I L   S E T T I N G S
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'   # <--- A D D
+DEFAULT_FROM_EMAIL = 'gen8787@gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

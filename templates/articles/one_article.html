@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}News App - {{article.title}}{% endblock title %}
+
+{% block content %}
+
+<div class="container pt-3">
+    <!-- T I T L E -->
+    <h1 class="display-2 mt-5 text-center g-font">{{article.title}}</h1>
+    <div class="divider bg-primary border border-secondary"></div>
+
+    <!-- O N E   A R T I C L E -->
+    <div class="mt-3 p-3 border border-secondary rounded">
+        <small class="text-muted">Posted by {{article.author}} on {{article.created_at}}</small>
+
+        <blockquote class="blockquote">
+            <p class="mt-3">{{article.body}}</p>
+        </blockquote>
+        
+        <a href="{% url 'edit_article' article.pk %}" class="btn btn-warning btn-wide">Edit</a>
+        <a href="{% url 'delete_article' article.pk %}" class="btn btn-danger btn-wide">Delete</a>
+    </div>
+
+    <div class="comments mt-5">
+        <h3 class="g-font display-6">Comments</h3>
+        <div class="divider bg-primary border border-secondary w-25 mb-3"></div>
+
+        <p class="w-75 border border-secondary rounded mb-5 p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eaque impedit tempora temporibus vero ea consequatur beatae fugiat tenetur doloribus praesentium vel quaerat, adipisci earum optio ipsam facere fuga provident.</p>
+
+        <p class="w-75 border border-secondary rounded mb-5 p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eaque impedit tempora temporibus vero ea consequatur beatae fugiat tenetur doloribus praesentium vel quaerat, adipisci earum optio ipsam facere fuga provident.</p>
+    </div>
+
+
+</div>
+
+{% endblock content %}
