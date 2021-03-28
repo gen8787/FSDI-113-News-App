@@ -16,5 +16,4 @@ urlpatterns = [
 
     # D E L E T E   A R T I C L E
     path('<int:pk>/delete', ArticleDeleteView.as_view(), name='delete_article'),
-
 ]

@@ -14,8 +14,20 @@
         <small class="text-muted">Welcome, {{user.username}}. You are {{user.age}} years old. Last login: {{user.last_login}}</small>
     </div>
     
-    <div class="all-pages border border-secondary rounded">
+    <div class="all-pages border border-secondary rounded"></div>
+    
+    <div class="row">
+        <div class="col-9">
+            <div class="jumbotron jumbotron-fluid border border-secondary mt-3 p-3">
+                <h1 class="display-4">News App</h1>
+                <p class="lead">A News App built with Django</p>
+                <p class="lead"><a href="{% url 'all_articles' %}" class="btn btn-lg btn-primary w-50">View Articles</a></p>
+            </div>
+        </div>
 
+        <div class="col text-center">
+            <h3>Recently Viewed</h3>
+        </div>
     </div>
 
     <!-- N O T   L O G G E D   I N -->

@@ -19,7 +19,7 @@ local_settings.py
 
 
 # Environments
-# .env
+.env
 .env/
 .venv/
 env/

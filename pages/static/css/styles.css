@@ -33,6 +33,10 @@ body {
     margin-right: 10px;
 }
 
+.jumbotron {
+    min-height: 30vh;
+}
+
 /* F O O T E R */
 footer {
     min-height: 10vh;

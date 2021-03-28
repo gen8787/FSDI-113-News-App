@@ -21,3 +21,11 @@
 - [ ] 7. Non-registered users cannot create, update or delete articles (only view).
 
 - [x] 8. Submission must be github link but also include a heroku URL in the README.
+
+#### Additional Functionality Added:
+
+* Edit / Delete Buttons do not show unless user who created post is logged in.
+
+#### Todo:
+
+- [ ] comments w edit/delete btns if logged
