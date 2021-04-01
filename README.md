@@ -18,7 +18,7 @@
 
 - [x] 6. Must be possible to create, view, update and delete articles.
 
-- [ ] 7. Non-registered users cannot create, update or delete articles (only view).
+- [x] 7. Non-registered users cannot create, update or delete articles (only view).
 
 - [x] 8. Submission must be github link but also include a heroku URL in the README.
 
@@ -28,4 +28,5 @@
 
 #### Todo:
 
+- [ ] add comments func
 - [ ] comments w edit/delete btns if logged
