@@ -1,0 +1,43 @@
+/* G L O B A L */
+body {
+    background-image: linear-gradient(#E8E8E8, #d4d1d1);
+}
+
+.container {
+    min-height: 90vh;
+}
+
+
+/* S P E C I F I C */
+.nav-log {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.g-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.login-error-btns button,
+.btn-wide {
+    width: 200px;
+}
+
+#article-card {
+    height: 300px;
+    width: 300px;
+}
+
+.btn-wide {
+    width: 175px;
+    margin-right: 10px;
+}
+
+.jumbotron {
+    min-height: 30vh;
+}
+
+/* F O O T E R */
+footer {
+    min-height: 10vh;
+}
