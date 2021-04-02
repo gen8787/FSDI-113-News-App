@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',  # <--- 3 R D   P A R T Y
+    # 'whitenoise.runserver_nostatic',  # <--- 3 R D   P A R T Y
     'django.contrib.staticfiles',
     'crispy_forms',  # <--- 3 R D   P A R T Y
     'accounts',  # <--- A P P
@@ -127,8 +127,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 AUTH_USER_MODEL = 'accounts.CustomUser'  # <---- A D D
