@@ -30,3 +30,5 @@
 
 - [ ] add comments func
 - [ ] comments w edit/delete btns if logged
+
+![](/static/img/app.png)
