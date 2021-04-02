@@ -136,6 +136,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'  # <---- A D D
 
 LOGIN_REDIRECT_URL = 'home'  # <--- A D D
 LOGOUT_REDIRECT_URL = 'login'  # <--- A D D
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # <--- A D D
 
 # E M A I L   S E T T I N G S
